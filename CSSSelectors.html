@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element selctor*/
+        /*div{/*div mathra red agutte*/
+           /* background-color: red;
+        }
+        /*Class Selctor*/
+        .red{/*yav class red antha name ide a class ge apply amdu antha*/
+            background-color: red;
+        }
+        #green{
+            background-color: green;
+        }/*child selector*/
+        div>p{
+            color: blue;
+            background-color:yellow;
+        }
+        /*descendent selector*/
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /*universal selector*/
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* Pseudo selector */
+        a:visited{
+            color:yellow
+        }
+        a:link{
+            color:green;
+        }
+        a:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <article>
+            <p>i am a para inside div</p>
+        </article>
+    </div>
+    <div id="green">
+        i am another div
+    </div>
+    <a href="http://www.google.com">Go to google</a>
+</body>
+</html>
