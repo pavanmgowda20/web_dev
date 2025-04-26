@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root{
+            --color: orange;
+            --seccolor: yellow;
+            --defop: 0.3;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style-type: none;
+            padding: 34px;
+        }
+        ul{
+            display: flex; /*onde line nalli list items barutte */
+        }
+        div:first-child{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>cont</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti odio laudantium nesciunt, ipsa quas sed at
+        totam deserunt optio neque vero eius doloribus et sunt porro provident a tenetur fuga voluptates quo. Quo iste
+        eius, cupiditate nulla aperiam amet libero, veniam commodi inventore, rerum consectetur.
+    </div>
+
+</body>
+
+</html>
